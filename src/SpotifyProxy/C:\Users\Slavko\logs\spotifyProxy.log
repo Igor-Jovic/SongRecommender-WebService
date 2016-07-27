@@ -1,0 +1,133 @@
+2016-05-13 17:47:37.328  INFO 1899 --- [main] r.f.i.SpotifyProxyApplication            : Starting SpotifyProxyApplication on Igors-iMac.local with PID 1899 (/Users/igor/NetBeansProjects/SongRecommender/src/SpotifyProxy/SpotifyProxyApp.jar started by igor in /Users/igor/NetBeansProjects/SongRecommender/src/SpotifyProxy)
+2016-05-13 17:47:37.331 DEBUG 1899 --- [main] r.f.i.SpotifyProxyApplication            : Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-13 17:47:37.331  INFO 1899 --- [main] r.f.i.SpotifyProxyApplication            : No active profile set, falling back to default profiles: default
+2016-05-13 17:47:37.389  INFO 1899 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5665c0aa: startup date [Fri May 13 17:47:37 CEST 2016]; root of context hierarchy
+2016-05-13 17:47:37.856  INFO 1899 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-05-13 17:47:38.401  INFO 1899 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2016-05-13 17:47:38.413  INFO 1899 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-05-13 17:47:38.414  INFO 1899 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-05-13 17:47:38.499  INFO 1899 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/sp]     : Initializing Spring embedded WebApplicationContext
+2016-05-13 17:47:38.500  INFO 1899 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1114 ms
+2016-05-13 17:47:38.778  INFO 1899 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-05-13 17:47:38.783  INFO 1899 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-05-13 17:47:38.783  INFO 1899 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-05-13 17:47:38.785  INFO 1899 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-05-13 17:47:38.786  INFO 1899 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-05-13 17:47:39.060  INFO 1899 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5665c0aa: startup date [Fri May 13 17:47:37 CEST 2016]; root of context hierarchy
+2016-05-13 17:47:39.118  INFO 1899 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tracks/{trackId}],methods=[GET]}" onto public rs.fon.inteligentni.model.FullTrack rs.fon.inteligentni.rest.resource.TrackResource.getTrackById(java.lang.String)
+2016-05-13 17:47:39.120  INFO 1899 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tracks],methods=[GET]}" onto public java.util.List<rs.fon.inteligentni.model.FullTrack> rs.fon.inteligentni.rest.resource.TrackResource.getTracksByNames(java.util.List<java.lang.String>)
+2016-05-13 17:47:39.122  INFO 1899 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-05-13 17:47:39.123  INFO 1899 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-05-13 17:47:39.154  INFO 1899 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-13 17:47:39.155  INFO 1899 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-13 17:47:39.175  INFO 1899 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionMapper
+2016-05-13 17:47:39.196  INFO 1899 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-13 17:47:39.294  INFO 1899 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-05-13 17:47:39.358  INFO 1899 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2016-05-13 17:47:39.361  INFO 1899 --- [main] r.f.i.SpotifyProxyApplication            : Started SpotifyProxyApplication in 2.32 seconds (JVM running for 2.699)
+2016-05-13 17:48:42.224  INFO 1899 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/sp]     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-05-13 17:48:42.224  INFO 1899 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-05-13 17:48:42.235  INFO 1899 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2016-05-13 17:48:42.256  INFO 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Going to Authorize on Spotify.
+2016-05-13 17:48:43.380 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Successfully retrieved an access token! BQC5sPI_hRq_n33j-XIwGXOwyo4QUQMq5IGV-7_5-WRFnGN6l9yZ61i0TaLI0fZarLTX5Bgzp4urNdHLtZFAqw
+2016-05-13 17:48:43.381 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : The access token expires in 3600 seconds
+2016-05-13 17:48:43.381 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Access token: BQC5sPI_hRq_n33j-XIwGXOwyo4QUQMq5IGV-7_5-WRFnGN6l9yZ61i0TaLI0fZarLTX5Bgzp4urNdHLtZFAqw
+2016-05-13 17:48:43.381  INFO 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Spotify authorization successful
+2016-05-13 17:48:44.301 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 411 results!
+2016-05-13 17:50:33.687 DEBUG 1899 --- [http-nio-9090-exec-5] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 463 results!
+2016-05-13 17:51:05.726 DEBUG 1899 --- [http-nio-9090-exec-9] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 463 results!
+2016-05-13 17:51:27.843 DEBUG 1899 --- [http-nio-9090-exec-3] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 463 results!
+2016-05-13 18:25:50.451 DEBUG 1899 --- [http-nio-9090-exec-7] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 1064 results!
+2016-05-13 18:26:50.674 DEBUG 1899 --- [http-nio-9090-exec-9] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 1064 results!
+2016-05-13 18:27:38.320 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 1064 results!
+2016-05-13 18:29:18.969 DEBUG 1899 --- [http-nio-9090-exec-3] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 1064 results!
+2016-05-13 18:30:14.495 DEBUG 1899 --- [http-nio-9090-exec-5] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 1064 results!
+2016-05-13 18:31:58.808 DEBUG 1899 --- [http-nio-9090-exec-7] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 1064 results!
+2016-05-13 18:33:46.432 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 1064 results!
+2016-05-13 18:34:32.166 DEBUG 1899 --- [http-nio-9090-exec-5] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 463 results!
+2016-05-13 18:37:43.304 DEBUG 1899 --- [http-nio-9090-exec-9] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 463 results!
+2016-05-13 18:39:15.505 DEBUG 1899 --- [http-nio-9090-exec-3] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 463 results!
+2016-05-13 18:41:01.017 DEBUG 1899 --- [http-nio-9090-exec-7] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 47 results!
+2016-05-13 18:41:26.424 DEBUG 1899 --- [http-nio-9090-exec-9] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 47 results!
+2016-05-13 18:42:15.279 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 463 results!
+2016-05-13 18:42:55.981 DEBUG 1899 --- [http-nio-9090-exec-5] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 47 results!
+2016-05-13 18:44:16.536 DEBUG 1899 --- [http-nio-9090-exec-9] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 442 results!
+2016-05-13 18:45:38.385 DEBUG 1899 --- [http-nio-9090-exec-3] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 542 results!
+2016-05-13 18:47:52.969 DEBUG 1899 --- [http-nio-9090-exec-7] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 542 results!
+2016-05-13 20:53:19.726  WARN 1899 --- [http-nio-9090-exec-1] o.a.c.httpclient.HttpMethodDirector      : Unable to respond to any of these challenges: {bearer=Bearer realm="spotify", error="invalid_token", error_description="The access token expired"}
+2016-05-13 20:53:19.741 ERROR 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Error retreiving song from Spotify. Going to try 2 more time:
+
+com.wrapper.spotify.exceptions.BadRequestException: 401
+	at com.wrapper.spotify.SpotifyHttpManager.handleErrorStatusCode(SpotifyHttpManager.java:178) ~[spotify-web-api-java-1.5.0.jar!/:na]
+	at com.wrapper.spotify.SpotifyHttpManager.execute(SpotifyHttpManager.java:157) ~[spotify-web-api-java-1.5.0.jar!/:na]
+	at com.wrapper.spotify.SpotifyHttpManager.get(SpotifyHttpManager.java:53) ~[spotify-web-api-java-1.5.0.jar!/:na]
+	at com.wrapper.spotify.methods.AbstractRequest.getJson(AbstractRequest.java:34) ~[spotify-web-api-java-1.5.0.jar!/:na]
+	at com.wrapper.spotify.methods.TrackSearchRequest.get(TrackSearchRequest.java:34) ~[spotify-web-api-java-1.5.0.jar!/:na]
+	at rs.fon.inteligentni.spotifyapi.SpotifyApiManagerImpl.getTrackByName(SpotifyApiManagerImpl.java:133) [SpotifyProxyApp.jar!/:na]
+	at rs.fon.inteligentni.spotifyapi.SpotifyApiManagerImpl.getTracksByTrackNames(SpotifyApiManagerImpl.java:163) [SpotifyProxyApp.jar!/:na]
+	at rs.fon.inteligentni.rest.resource.TrackResource.getTracksByNames(TrackResource.java:25) [SpotifyProxyApp.jar!/:na]
+	at sun.reflect.GeneratedMethodAccessor67.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_51]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) [spring-webmvc-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.5.RELEASE.jar!/:4.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_51]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_51]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.0.32.jar!/:8.0.32]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_51]
+
+2016-05-13 20:53:19.743  INFO 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Going to Authorize on Spotify.
+2016-05-13 20:53:20.449 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Successfully retrieved an access token! BQCzY-YcT5dQTmUfUQCREM4qo5rk3WORQ4Z-yMIO4xpp9suzuVocqzXai47JLxg8dCePSIWhGrM8zC_fPxI0yg
+2016-05-13 20:53:20.449 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : The access token expires in 3600 seconds
+2016-05-13 20:53:20.449 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Access token: BQCzY-YcT5dQTmUfUQCREM4qo5rk3WORQ4Z-yMIO4xpp9suzuVocqzXai47JLxg8dCePSIWhGrM8zC_fPxI0yg
+2016-05-13 20:53:20.449  INFO 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : Spotify authorization successful
+2016-05-13 20:53:21.012 DEBUG 1899 --- [http-nio-9090-exec-1] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 30600 results!
+2016-05-13 20:55:10.566 DEBUG 1899 --- [http-nio-9090-exec-5] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 3738 results!
+2016-05-13 20:56:49.037 DEBUG 1899 --- [http-nio-9090-exec-9] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 1195 results!
+2016-05-13 20:58:22.149 DEBUG 1899 --- [http-nio-9090-exec-3] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 528 results!
+2016-05-13 20:59:58.055 DEBUG 1899 --- [http-nio-9090-exec-7] r.f.i.spotifyapi.SpotifyApiManagerImpl   : I got 442 results!
+2016-05-14 11:38:08.895  INFO 1899 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5665c0aa: startup date [Fri May 13 17:47:37 CEST 2016]; root of context hierarchy
+2016-05-14 11:38:08.896  INFO 1899 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
